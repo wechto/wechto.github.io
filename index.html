@@ -1,277 +1,614 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<!-- https://wechto.github.io/#home -->
+<html lang="en" class="Jinxin Liu"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
 
-<head>
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-      color: #1772d0;
-      text-decoration: none;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jinxin Liu">
+    <meta name="author" content="Jinxin Liu">
+    <meta name="keywords" content="Jinxin Liu,Reinforcement Learning,Machine Learning">
+
+    <script type="text/javascript" async="" src="./minesrc/js"></script><script type="text/javascript" async="" src="./minesrc/analytics.js"></script>
+    <script async="" src="./minesrc/analytics.js"></script>
+    <!-- <script src="./9JZkBilUSmGpH8F5SvwGOfpXbTA.js"></script> -->
+    <script src="./minesrc/js(1)"></script><style type="text/css" abt="234"></style>
+    <link href="https://wechto.github.io/assets/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./minesrc/all.min.css">
+    <link rel="stylesheet" href="./minesrc/academicons.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./minesrc/js(2)"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-02L3BXBHCW');
+    </script>
+    
+    
+    <link href="./minesrc/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./minesrc/css" rel="stylesheet">
+
+
+    <link href="./minesrc/fontawesome.css" rel="stylesheet">
+    <link href="./minesrc/solid.css" rel="stylesheet">
+    <!-- <link href="./brands.css" rel="stylesheet"> -->
+
+    <!-- <link href="./academicons.min.css" rel="stylesheet"> -->
+
+    <link href="./minesrc/style.css" rel="stylesheet">
+    <link href="./minesrc/font.css" rel="stylesheet">
+    <title>Jinxin Liu @ Westlake University</title>
+
+<!-- #aa0ded -- aa0ded -->
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted #aa0ded;
     }
-
-    a:focus,
-    a:hover {
-      color: #f09228;
-      text-decoration: none;
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #aa0ded;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+        top: 105%;
     }
-
-    body,
-    td,
-    th,
-    tr,
-    p,
-    a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
     }
+</style><script>//remove baidu search ad
+var _countAA = 0
+function doBBBd(){}
+doBBBd()
+document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
+document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
 
-    strong {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-    }
+</script></head>
 
-    heading {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 22px;
-    }
+<body data-gr-c-s-loaded="true" data-new-gr-c-s-check-loaded="14.1113.0" data-gr-ext-installed="" class="vsc-initialized">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
 
-    papertitle {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 14px;
-      font-weight: 700
-    }
-
-    name {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 32px;
-    }
-
-    .one {
-      width: 80px;
-      height: 80px;
-      position: relative;
-    }
-
-    .two {
-      width: 160px;
-      height: 100px;
-      position: absolute;
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    .fade {
-      transition: opacity .2s ease-in-out;
-      -moz-transition: opacity .2s ease-in-out;
-      -webkit-transition: opacity .2s ease-in-out;
-    }
-
-    span.highlight {
-      background-color: #ffffd0;
-    }
-  </style>
-  <link rel="icon" type="image/png" href="seal_icon.png">
-  <title>Jinxin</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="67%" valign="middle">
-              <p align="center">
-                <name>Jinxin Liu</name>
-              </p>
-              <p>
-                I am currently a joint Ph.D. student of <a href="https://www.zju.edu.cn/">Zhejiang University</a> and
-                <a href="https://www.westlake.edu.cn/">Westlake University</a>, advised by <a
-                  href="https://www.westlake.edu.cn/academics/School_of_Engineering/About/Faculty/202006/t20200618_5969.shtml">Prof.
-                  Donglin Wang</a>.
-                Also, I am a member of <a href="https://milab.westlake.edu.cn/">Machine Intelligence Laboratory
-                  (MiLAB)</a> in Westlake University, where I do my research work on deep
-                reinforcement learning and robot learning.
-                Before coming to Westlake University, I obtained my bachelor's degree of Engineering from <a href="http://www.cqupt.edu.cn/">Chongqing
-                  University of Posts and Telecommunications</a>, majoring in Communication Engineering. 
-              </p>
-
-              <p>
-                My main research goal is to develop algorithms which enable robotic systems to learn how to perform
-                complex tasks in a variety of unstructured environments. To that end, I work towards building deep
-                reinforcement learning algorithms that can learn in the real world. Recently, I have been specifically
-                focusing on the problems of 1) unsupervised reinforcement learning, 2) transition dynamics adaptation,
-                3) offline reinforcement learning for quadruped robots in real world.
-              </p>
-
-              <p align=center>
-                <a href="mailto:liujinxin@westlake.edu.cn">Email</a> &nbsp/&nbsp
-                <a href="files/cv.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://github.com/wechto"> GitHub </a> &nbsp/&nbsp
-                <a
-                  href="https://scholar.google.com/citations?hl=en&user=oC16lJ0AAAAJ&view_op=list_works&sortby=pubdate">Google
-                  Scholar</a> &nbsp;
-              </p>
-            </td>
-            <td width="40%">
-              <img src="images/ta1.jpg" width="200">
-            </td>
-          </tr>
-        </table>
-
-        <br>
-        <br>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </table>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-          <tr>
-
-            <td width="15%">
-              <div class="one">
-                <img src='images/dara.png' width=130%>
-              </div>
-            </td>
-            <td valign="top" width="85%">
-              <p><a href="https://openreview.net/forum?id=9SDQB3b68K">
-                  <papertitle>DARA: Dynamics-Aware Reward Augmentation in Offline Reinforcement Learning
-                  </papertitle>
-                </a><br><u>Jinxin Liu</u>*, Hongyin Zhang*, Donglin Wang<br>
-                <em>ICLR 2022</em><br>
-                <a href="https://arxiv.org/pdf/2203.06662.pdf">paper</a>
-                &nbsp;
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://wechto.github.io/#">
+                    <serif>Jinxin Liu</serif>
                 </a>
-              </p>
-            </td>
-          </tr>
-
-
-          <td width="15%">
-            <div class="one">
-              <img src='images/gpim.png' width=130%>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="https://wechto.github.io/#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://wechto.github.io/#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Links
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="https://wechto.github.io/#bio">Biography</a>
+                                <a class="dropdown-item" href="https://wechto.github.io/#pub">Publications</a>
+                                <a class="dropdown-item" href="https://wechto.github.io/#services">Services</a>
+                                <a class="dropdown-item" href="https://wechto.github.io/#invited-talks">Talks</a>
+                                <a class="dropdown-item" href="https://wechto.github.io/#teaching">Teaching</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </td>
-          <td valign="top" width="85%">
-            <p><a href="https://arxiv.org/pdf/2104.05043.pdf">
-                <papertitle>Learn Goal-Conditioned Policy with Intrinsic Motivation for Deep Reinforcement Learning
-                </papertitle>
-              </a><br><u>Jinxin Liu</u>, Donglin Wang, Qiangxing Tian, Zhengyu Chen<br>
-              <em>AAAI 2022</em><br>
-              <a href="https://arxiv.org/pdf/2104.05043.pdf">paper</a>
-              &nbsp;
-              <!--<a href ="https://sites.google.com/view/gpim/">homepage</a>-->
-              </a>
-            </p>
-          </td>
-    </tr>
+        </nav>
+        <div class="sec-wrapper home-wrapper" id="home" style="background-color: white;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="picture">
+                        <div class="col-sm-auto col-wrapper">
+                            <img src="./mineimg/JinxinLiu.jpg" class="img-responsive" alt="Jinxin Liu" width="100">
+                        </div>
+                    </div>
+                    <div class="col-sm col-wrapper">
+                        <div class="description">
+                            <h1 class="name">Jinxin Liu</h1>
+                            <div>Ph.D. student at <a href="https://www.zju.edu.cn/">Zhejiang University</a> </div>
+                            <div>Email: liujinxin [At] zju.edu.cn, liujinxin [At] westlake.edu.cn </div>
+                            <div>
+                                <!-- <br> -->
+                                <a href="https://wechto.github.io/Jinxin_Liu_CV.pdf">[CV]</a> 
+                                <a href="https://github.com/wechto">[Github]</a> 
+                                <a href="https://scholar.google.com/citations?hl=en&user=oC16lJ0AAAAJ&view_op=list_works&sortby=pubdate">[Google Scholar]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-lg col-wrapper">
+                        <div class="interests">
+                            <h2 class="section-title">Research Interests</h2>
+                            <ul>
+                                <li>Reinforcement Learning</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
 
-    <td width="15%">
-      <div class="one">
-        <img src='images/dars.png' width=130%>
-      </div>
-    </td>
-    <td valign="top" width="85%">
-      <p><a href="https://arxiv.org/pdf/2110.12997.pdf">
-          <papertitle>Unsupervised Domain Adaptation with Dynamics Aware Rewards in Reinforcement Learning
-          </papertitle>
-        </a><br><u>Jinxin Liu</u>, Hao Shen, Donglin Wang, Yachen Kang, Qiangxing Tian<br>
-        <em>NeurIPS 2021</em><br>
-        <a href="https://arxiv.org/pdf/2110.12997.pdf">paper</a>
-        &nbsp;
-        <!--<a href ="https://sites.google.com/view/milab-dars/">homepage</a>-->
-        </a>
-      </p>
-    </td>
-    </tr>
+
+        <div class="sec-wrapper bio-wrapper" id="bio">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-wrapper" style="font-size:12pt">
+                        <div class="col col-wrapper">
+                            <div class="section-title">About</div>
+                        </div>
+                        <p>
+                            Hi, I am Jinxin Liu (刘金鑫), a fourth-year (joint) Ph.D student at <a href="https://www.zju.edu.cn/">Zhejiang University</a> and <a href="https://www.westlake.edu.cn/">Westlake University</a> (<a href="https://milab.westlake.edu.cn/">Machine Intelligence Lab, MiLAB</a>), supervised by Prof. <a href="https://milab.westlake.edu.cn/">Donglin Wang</a>. Before that, I obtained my bachelor's degree of Engineering from <a href="http://www.cqupt.edu.cn/">Chongqing University of Posts and Telecommunications</a>, majoring in Communication Engineering. 
+                            I've interned at <img src="./mineimg/Img_Huawei2.svg" style="height: 18px; margin-bottom: 6px;"> <a href="https://www.huawei.com/" style="color:#ec2932">Huawei</a><a href="https://www.noahlab.com.hk/"> (Noah's Ark Lab)</a>. 
+                            <!-- My interests include Deep Reinforcement Learning and AB CD. Now I mainly work on the area of Imitation Learning, Offline Reinforcement Learning, and Reward-free RL. -->
+                        </p>
+                        
+                        <!-- My main research goal is to develop algorithms which enable robotic systems to learn how to perform complex tasks in a variety of unstructured environments. To that end, I work towards building deep reinforcement learning algorithms that can learn in the real world. Recently, I have been specifically focusing on the problems of 1) unsupervised reinforcement learning, 2) transition dynamics adaptation, 3) offline reinforcement learning for quadruped robots in real world. --> 
 
 
-    <td width="15%">
-      <div class="one">
-        <img src='images/ist.png' width=130%>
-      </div>
-    </td>
-    <td valign="top" width="85%">
-      <p><a href="https://www.ijcai.org/proceedings/2020/0401.pdf">
-          <papertitle>Independent Skill Transfer for Deep Reinforcement Learning
-          </papertitle>
-        </a><br>Qiangxing Tian, Guanchu Wang, <u>Jinxin Liu</u>, Donglin Wang, Yachen Kang
+                        <p id="research-interests">The central goal of my research is to build decision-making agents that are capable of performing complex tasks in a variety of unstructured environments. I strive to achieve this by developing deep reinforcement learning (RL) algorithms and deploying sample-efficient RL to real-world tasks. My research helps people acquire general and robust decision-making behaviors in both simulated and real-world tasks. Especially, I study three main topics:</p>
+                        <ul>
+                            <li><b>Reinforcement Learning:</b> imitation learning, unsupervised (reward-free) RL, learning skills, and deep generative models.</li>
+                            <li><b>Planning and Inference:</b> offline RL, offline-to-online RL, and design from data.</li>
+                            <li><b>Distribution Shift:</b> RL dynamics/embodyment adaptation, multi-goal RL, sim2real, and sample-efficient RL.</li>
+                        </ul>
+
+                        <!-- <p style="font-style:italic"><b>News</b>: I'm a recipient of <img style="width:20px; margin-bottom:10px; margin-right:4px" src="./minesrc/apple_1.png"><a href="" style="color:#706f6f;">AB Scholars in AI/ML PhD fellowship 2023.</a></p> -->
+
+                        <div >
+                            <a style="font-size:14pt; font-weight:bold">News</a>
+                            <li>Apr. 2023: Two papers are accepted by ICML'2023.</li>
+                            <li>Jan. 2023: One paper is accepted by ICLR'2023.</li>
+                            <li>Jun. 2022: I will join Huawei Noah's Ark Lab as a research intern this summer.</li>
+                            <li>Jan. 2022: One paper is accepted by ICLR'2022.</li>
+                            <li>Dec. 2021: One paper is accepted by AAAI'2022.</li>
+                            <li>Sep. 2021: One paper is accepted by NeurIPS'2021.</li>
+                            <li>Apr. 2020: One paper is accepted by IJCAI'2020.</li>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sec-wrapper pub-wrapper" id="pub">
+            <div class="container-fluid" id="main-pub-container">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title" id="selected_publication">Selected Preprints & Publications</div>
+                    </div>
+                </div>
+
+                <!-- <br> -->
+
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <!-- <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/chipformer-2.gif" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div> -->
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    CEIL: Generalized Contextual Imitation Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Li He, Yachen Kang, Zifeng Zhuang, Donglin Wang, Huazhe Xu
+                            </div>
+                            <a href="https://arxiv.org/pdf/2306.14534.pdf">[Paper]</a>
+                            <a id="conference">Preprint</a>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Design from Policies: Conservative Test-Time Adaptation for Offline Policy Optimization
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Hongyin Zhang, Zifeng Zhuang, Yachen Kang, Donglin Wang, Bin Wang
+                            </div>
+                            <a href="https://arxiv.org/pdf/2306.14479.pdf">[Paper]</a>
+                            <a id="conference">Preprint</a>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    CLUE: Calibrated Latent Guidance for Offline Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Lipeng Zu, Li He, Donglin Wang
+                            </div>
+                            <a href="https://arxiv.org/pdf/2306.13412.pdf">[Paper]</a>
+                            <a id="conference">Preprint</a>
+                            <br>
+                            <br>
+                        </div>
+
+                        <div class="col-xs-12 col-md-12 col-lg-12 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Beyond OOD State Actions: Supported Cross-Domain Offline Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Ziqi Zhang, Zhenyu Wei, Zifeng Zhuang, Yachen Kang, Sibo Gai, Donglin Wang
+                            </div>
+                            <a href="https://arxiv.org/pdf/2306.12755.pdf">[Paper]</a>
+                            <a id="conference">Preprint</a>
+                            <br>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/chipformer-2.gif" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    ChiPFormer: Transferable Chip Placement via Offline Decision Transformer
+                                </a>
+                            </div>
+                            <div class="authors">
+                                Yao Lai, <me>Jinxin Liu</me>, Zhentao Tang, Bin Wang, Jianye Hao, Ping Luo
+                            </div>
+                            <div><a id="conference">International Conference on Machine Learning (ICML, 2023)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2306.14744.pdf">[Paper]</a>
+                            <a href="https://github.com/laiyao1/chipformer">[Code]</a>
+                            <a href="https://drive.google.com/drive/folders/1F7075SvjccYk97i2UWhahN_9krBvDCmr">[Dataset]</a>
+                            <a href="https://docs.google.com/document/d/1q7dajZt3kIVpyRbvfPSQ7H6stM1Ahz8A2YoyZ2dxJE4/edit">[Document]</a>
+                            <a href="https://sites.google.com/view/chipformer/home">[Homepage]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/oppo.png" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Beyond Reward: Offline Preference-guided Policy Optimization
+                                </a>
+                            </div>
+                            <div class="authors">
+                                Yachen Kang, Diyuan Shi, <me>Jinxin Liu</me>, Li He, Donglin Wang
+                            </div>
+                            <div><a id="conference">International Conference on Machine Learning (ICML, 2023)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2305.16217.pdf">[Paper]</a>
+                            <a href="https://github.com/bkkgbkjb/OPPO">[Code]</a>
+                            <!-- <a href="https://wechto.github.io/files/ICML2023-OPPO-poster.png">[Poster]</a> -->
+                            <a href="https://sites.google.com/view/oppo-icml-2023">[Homepage]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/bppo.png" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Behavior Proximal Policy Optimization
+                                </a>
+                            </div>
+                            <div class="authors">
+                                Zifeng Zhuang, Kun Lei, <me>Jinxin Liu</me>, Donglin Wang, Yilang Guo
+                            </div>
+                            <div><a id="conference">International Conference on Learning Representations (ICLR, 2023)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2302.11312.pdf">[Paper]</a>
+                            <a href="https://github.com/Dragon-Zhuang/BPPO">[Code]</a>
+                            <a href="https://wechto.github.io/files/ICLR2023-BPPO-poster.png">[Poster]</a>
+                            <a href="https://iclr.cc/virtual/2023/poster/10714">[Video]</a>
+                            <a href="https://zhuanlan.zhihu.com/p/610636639">[Zhihu]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/dara.png" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    DARA: Dynamics-Aware Reward Augmentation in Offline Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu*</me>, Hongyin Zhang*, Donglin Wang 
+                            </div>
+                            <div><a id="conference">International Conference on Learning Representations (ICLR, 2022)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2203.06662.pdf">[Paper]</a>
+                            <a href="https://openreview.net/forum?id=9SDQB3b68K">[Code]</a>
+                            <!-- <a href="https://openreview.net/forum?id=9SDQB3b68K">[Supplementary]</a> -->
+                            <a href="https://wechto.github.io/files/ICLR2022-DARA-slides.pdf">[Slides]</a>
+                            <a href="https://wechto.github.io/files/ICLR2022-DARA-poster.png">[Poster]</a>
+                            <a href="">[Homepage]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/gpim-1.gif" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Learn Goal-Conditioned Policy with Intrinsic Motivation for Deep Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Donglin Wang, Qiangxing Tian, Zhengyu Chen 
+                            </div>
+                            <div><a id="conference"> Association for the Advancement of Artificial Intelligence (AAAI, 2022)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2104.05043.pdf">[Paper]</a>
+                            <a href="">[Code]</a>
+                            <a href="https://wechto.github.io/files/AAAI2022-GPIM-slides.pdf">[Slides]</a>
+                            <a href="https://wechto.github.io/files/AAAI2022-GPIM-poster.png">[Poster]</a>
+                            <a href="https://sites.google.com/view/gpim/">[Homepage]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/dars-1.gif" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Unsupervised Domain Adaptation with Dynamics Aware Rewards in Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                <me>Jinxin Liu</me>, Hao Shen, Donglin Wang, Yachen Kang, Qiangxing Tian
+                            </div>
+                            <div><a id="conference">Neural Information Processing Systems (NeurIPS, 2021)</a>
+                            </div>
+                            <a href="https://arxiv.org/pdf/2110.12997.pdf">[Paper]</a>
+                            <a href="https://openreview.net/forum?id=u7Qb7pQk8tF">[Code]</a>
+                            <a href="https://wechto.github.io/files/NeurIPS2021-DARS-slides.pdf">[Slides]</a>
+                            <a href="https://wechto.github.io/files/NeurIPS2021-DARS-poster.png">[Poster]</a>
+                            <a href="https://sites.google.com/view/milab-dars">[Homepage]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/ist.png" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Independent Skill Transfer for Deep Reinforcement Learning
+                                </a>
+                            </div>
+                            <div class="authors">
+                                Qiangxing Tian, Guanchu Wang, <me>Jinxin Liu</me>, Donglin Wang, Yachen Kang
+                            </div>
+                            <div><a id="conference"> International Joint Conference on Artificial Intelligence (IJCAI, 2020)</a>
+                            </div>
+                            <a href="https://www.ijcai.org/proceedings/2020/0401.pdf">[Paper]</a>
+                            <a href="">[Code]</a>
+                            <!-- <a href="">[Slides]</a>
+                            <a href="">[Poster]</a> -->
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="pub-card" data-topic="ABtopic" data-year="2019" data-selected="true">
+                    <div class="row align-items-center section-item">
+                        <div class="col-xs-12 col-md-2 col-lg-3 col-wrapper">
+                            <div class="figure">
+                                <img src="./images/cikm.png" style="width:30ch; height:17ch; margin-left:10px" >
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-10 col-lg-9 col-wrapper">
+                            <div class="title">
+                                <a>
+                                    Time Series Prediction with Interpretable Data Reconstruction
+                                </a>
+                            </div>
+                            <div class="authors">
+                                Qiangxing Tian*, <me>Jinxin Liu*</me>, Donglin Wang, Ao Tang
+                            </div>
+                            <div><a id="conference">ACM International Conference on Information and Knowledge Management (CIKM, 2019)</a>
+                            </div>
+                            <a href="https://dl.acm.org/doi/10.1145/3357384.3358141">[Paper]</a>
+                            <a href="">[Code]</a>
+                            <a href="https://wechto.github.io/files/CIKM2019-slides.pdf">[Slides]</a>
+                            <a href="https://wechto.github.io/files/CIKM2019-poster.pdf">[Poster]</a>
+                            <!-- <br>
+                            <br> -->
+                        </div>
+                    </div>
+                </div>
+
+                    
+            </div>
+        </div>
+
+
+
+
+        
+
+        
+
+
         <br>
-        <em>IJCAI 2020</em><br>
-        <a href="https://www.ijcai.org/proceedings/2020/0401.pdf">paper</a>
-        &nbsp;
-        </a>
-      </p>
-    </td>
-    </tr>
-
-
-    <td width="15%">
-      <div class="one">
-        <img src='images/cikm.png' width=130%>
-      </div>
-    </td>
-    <td valign="top" width="85%">
-      <p><a href="https://dl.acm.org/doi/abs/10.1145/3357384.3358141">
-          <papertitle>Time Series Prediction with Interpretable Data Reconstruction 
-          </papertitle>
-        </a><br>Qiangxing Tian*, <u>Jinxin Liu</u>*, Donglin Wang, Ao Tang
         <br>
-        <em>CIKM 2019</em><br>
-        <a href="https://dl.acm.org/doi/pdf/10.1145/3357384.3358141">paper</a>
-        &nbsp;
-        </a>
-      </p>
-    </td>
-    </tr>
+        
+        
+        <div class="sec-wrapper exp-wrapper" id="services">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Service</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">
+                        <li>Reviewer or program committee member for ICML, ICLR, NeurIPS, IJCAI, AAAI, KDD, and IROS. </li>
+                    </div>
 
 
+                </div>
+            </div>
+        </div>
 
-  </table>
 
-  </td>
-  </tr>
-  </table>
+        <!-- 929292 2e6f7b 928272 -->
+        <div class="sec-wrapper exp-wrapper" id="invited-talks">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Talks</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">
+                        <li>Mar. 2023: <a style="color:#928272; font-style: italic;">"Beyond Design from Data: Design from Policies is All You Need"</a> at <a href="" style="color:#928272;">Ali Cloud, Alibaba</a>.</li>
+                        <li>Dec. 2021: <a style="color:#928272; font-style: italic;">"Hi, Robot: Training a Versatile Robot from Scratch"</a> at <a href="" style="color:#928272;">Talk to the Future, Westlake University</a>.</li>
+                        <li>Jul. 2021: <a style="color:#928272; font-style: italic;">"Control as Inference: A General Review"</a> at <a href="" style="color:#928272;">Second Research Institute of CASIC</a>.</li>
+                        <li>Dec. 2020: <a style="color:#928272; font-style: italic;">"Unsupervised Reinforcement Learning for Skill Discovery"</a> at <a href="" style="color:#928272;">Westlake Robot Learning Symposium</a>.</li>
+                        <li>Oct. 2019: <a style="color:#928272; font-style: italic;">"Time Series Prediction with Interpretable Data Reconstruction"</a> at <a href="" style="color:#928272;">Zhejiang University</a>.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!--
-  <table width="100%" align="right" border="0" cellspacing="0" cellpadding="2">
-    <p align="right">
-      <font size="2">
-        <a href="http://www.statworker.com/" target="_blank"><img
-            src="https://www.webfreecounter.com/hit.php?id=gvepcapk&nd=6&style=1" border="0" alt="statworker"></a>
-        views.
-      </font>
-    </p>
-  </table>
-  -->
+        <div class="sec-wrapper exp-wrapper" id="teaching">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Teaching</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">
+                        <li>[Spring 2023] <a style="font-weight: bold;">Deep Reinforcement Learning.</a> Teaching assistance, Westlake University.</li>
+                        <li>[Fall 2021] <a style="font-weight: bold;">Deep Reinforcement Learning.</a> Teaching assistance, Westlake University.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
         <br>
-        <p align="right">
-          <font size="2">
-            Website template from <a href="https://abhishekunique.github.io/">Abhishek Gupta</a>.
-            <br>
-            Last updated March 2022.
-          </font>
-        </p>
-      </td>
-    </tr>
-  </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+        <div style="text-align:right; color:gray">
+            The website template was borrowed from <a href="https://yifanjiang19.github.io/#home">[1]</a>. 
+        </div>
+        <br>
+        <br>
+        
+
+    </div>
+
+    <script src="./minesrc/jquery-3.3.1.slim.min.js"></script>
+    <script src="./minesrc/tether.min.js"></script>
+    <script src="./minesrc/bootstrap.min.js"></script>
+    
+    
 
 
-</body>
 
-</html>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
